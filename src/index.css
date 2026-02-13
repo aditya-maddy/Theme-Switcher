@@ -1,0 +1,27 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --body_background: white;
+  --body_color: black;
+}
+
+/* ===== BODY ===== */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--body_background);
+  color: var(--body_color);
+
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+[data-theme="dark"] {
+  --body_background: #282c34;
+  --body_color: white;
+}
